@@ -21,6 +21,9 @@ export default function Signup() {
     if (res.error) {
       setError(res.error);
     } else {
+      // Create a user object even though we'll redirect to login
+      // This allows us to prefill the email on the login page if we want
+      localStorage.setItem("registeredEmail", email);
       navigate("/login");
     }
   };

@@ -37,7 +37,9 @@ export default function Login() {
       if (res.error) {
         setError(res.error);
       } else {
+        // Store the token and user data in localStorage
         localStorage.setItem("token", res.token);
+        localStorage.setItem("user", JSON.stringify(res.user));
         navigate("/home");
       }
     } catch (err) {
