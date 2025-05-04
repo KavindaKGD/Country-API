@@ -19,7 +19,7 @@ export default function Header() {
         aria-label="Go to home page"
       >
         <span className="text-2xl sm:text-3xl">🌍</span>
-        <span className="hidden xs:inline">Country Explorer</span>
+        <span className="inline">Country Explorer</span>
       </h1>
       
       <nav className="flex gap-2 sm:gap-4">
