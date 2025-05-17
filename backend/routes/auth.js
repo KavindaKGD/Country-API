@@ -6,10 +6,7 @@ const User = require("../models/User");
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
-// Health Check
-app.get("/", (req, res) => {
-  res.send("🌍 Country API is running!");
-});
+
 
 
 // Register
